@@ -48,7 +48,7 @@ console.log(output);
 
 /***
  * Better Solution
- *
+ * Inside the loop, the code first calculates the complement of the current element nums[i], which is target - nums[i]. This complement is the number that, when added to the current element, results in the target value.
  */
 function twoSum(nums, target) {
   let map = new Map();
@@ -60,5 +60,5 @@ function twoSum(nums, target) {
     map.set(nums[i], i);
   }
 }
-const result = twoSum([2, 7, 11, 15], 9);
+const result = twoSum([2, 11, 15, 7], 9);
 console.log(result);
